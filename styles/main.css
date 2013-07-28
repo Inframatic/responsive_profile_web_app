@@ -22,7 +22,6 @@ footer, header, hgroup, menu, nav, section {
 	margin: auto;
 	padding: 2%;
 	} 
-
 	#main {
 		width: 60%;
 		margin-right: 5%;
@@ -40,8 +39,9 @@ header h1 {
 	width: 160px;
 	float: left;
 	display: block;
-	background: url(../images/demo.gif) 0 0 no-repeat;
-	text-indent: -9999px;
+	color:black;
+	/*background: url(../images/demo.gif) 0 0 no-repeat;*/
+	/*text-indent: -9999px;*/
 	}
 		
 /* Nav */
