@@ -1,12 +1,13 @@
 #company_info {
-	width: 40%;
-	margin-left: 5%;
-	float: right;
-	background-color: gray;
+	width: 30%;
+	margin-top:2%;
+	float: left;
+/*	background-color: gray;*/
 }
 
 #filter {
 	width:40%;
+	float:left;
 }
 
 #profile_container {
@@ -16,10 +17,10 @@
 }
 /* Reset
 ------------------------------------------------------------ */
-li img {
+/*li img {
 	float:left;
 	width: 25%;
-}
+}*/
 input {
 	border-radius: 3px
 }
@@ -80,7 +81,7 @@ footer, header, hgroup, menu, nav, section {
 /* Structure */
 #wrapper {
 	width: 99%;	
-	max-width: 920px;
+	max-width: 980px;
 	margin: auto;
 	padding: 2%;
 	} 

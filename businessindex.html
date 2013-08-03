@@ -24,10 +24,14 @@
 						</li>
 					</ul>
 				</nav>
-			<section id="main">
+
+				<section id="company_info">
+					<img src="http://www.corporatetraveller.ca/assets/images/profile-placeholder.gif" />
+				</section>
+				
 				<aside>
 			        <ul>
-			       	<div id="filter">
+			       	<section id="filter">
 			            <br>
 			            <p>Filter by:</p>
 			            <input type="text" data-ng-model="location" placeholder="Location"/> <br>
@@ -46,9 +50,12 @@
 			                <option value="">1st Interview</option>
 			            </select>
 			            <p></p>
+			        </section>
 			        </ul>
 				</aside>
-			</section>
+
+
+
 				<!-- NAV GOES HERE -->
 			
 			</header>	
@@ -56,7 +63,7 @@
 			<section id="main">
 				<ul>
 	            	<li id="profile_container" data-ng-repeat="item in list |filter:name| filter:paid | filter:intern| filter:industry| filter:location| filter:keyworddescription| filter: firstinterview">
-	                	<img src="http://www.corporatetraveller.ca/assets/images/profile-placeholder.gif" />
+	                	
 	                    <div class="nametitle">{{item.name}}</div> <br>
 	                    {{item.industry}} <br>
 	                    Paid or Volunteer: {{item.paidvolunteer}}<br>
@@ -66,6 +73,8 @@
 	            	</li>
 	        	</ul>
 			</section>
+
+
 		</div>
 		<script src="angular.min.js"></script>
 	</body>
