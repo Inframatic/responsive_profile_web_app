@@ -1,95 +1,37 @@
-#company_info {
-	width: 40%;
-	margin-left: 5%;
-	float: right;
-	background-color: gray;
-}
-
-#filter {
-	width:40%;
-}
-
-#profile_container {
-	margin-top: 20px;
-	margin-bottom: :20px;
-
-}
 /* Reset
 ------------------------------------------------------------ */
-li img {
-	float:left;
-	width: 25%;
-}
-input {
-	border-radius: 3px
-}
-
-* { 
-	margin: 0; padding: 0; 
-	}
-
-html { 
-	overflow-y: scroll;
-	}
-
-body { 
-	background:#ffffff; color: #666666; font-family: Arial, helvetica, sans-serif;
-	}
-
-ol, ul { 
-	list-style: none; margin: 0;
-	}
-
-ul li { 
-	margin: 0; padding: 0;
-	border: solid black 1px;
-	float:right;
-	}
-
-h1 { 
-	margin-bottom: 10px; color: #111111;
-	}	
-
-a, img { 
-	outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;
-	}
-
-p { 
-	margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;
-	}
-
-img { 
-	display: block; margin-bottom: 10px;
-	}
-
-aside { 
-	margin-top:20px;
-	padding: 20px;
-	font-style: italic; font-size: 0.9em;
-	background-color:gray;
-	height:100%;
-	float: left;
-	}
-
-
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#ffffff; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}	
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section { 
     display: block;
 	}
-	
+
 /* Structure */
 #wrapper {
-	width: 99%;	
+	width: 96%;	
 	max-width: 920px;
 	margin: auto;
 	padding: 2%;
 	} 
 	#main {
-		width: 40%;
-		margin-left: 5%;
-		float: right;
+		width: 60%;
+		margin-right: 5%;
+		float: left;
 		}		
 
+	aside {
+		width: 35%;
+		float: right;
+		}
 
 /* Logo H1 */
 header h1 {
@@ -101,13 +43,13 @@ header h1 {
 	/*background: url(../images/demo.gif) 0 0 no-repeat;*/
 	/*text-indent: -9999px;*/
 	}
-		
+
 /* Nav */
 header nav {
 	float: right;
 	margin-top: 40px; 
 	}
-	
+
 	header nav li {
 		display: inline;
 		margin-left: 15px;
@@ -122,9 +64,9 @@ header nav {
 
 /* Banner */			
 #banner {
-	float: right;
+	float: left;
 	margin-bottom: 15px;
-	width: 75%;
+	width: 100%;
 	}
 
 	#banner img {
@@ -138,7 +80,7 @@ header nav {
 	#skipTo {
 		display: block;
 		}
-	
+
 	header nav, #main, aside {
 		float: left;
 		clear: left;

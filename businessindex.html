@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="">
+	<head>
+		<meta charset="utf-8"/>
+		<title> Entreprenology</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<link href="styles/main.css" type="text/css" rel="stylesheet">
+		<script src="controller.js"></script>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script type='text/javascript' src='scripts/respond.min.js'></script>
+	</head>
+	<body>
+	
+		<div id="wrapper" data-ng-controller="BusinessCtrl">
+		
+			<header>
+				
+				<nav id="skipTo">
+					<ul>
+						<li>
+							<a href="#main" title="Skip to Main Content">Skip to Main Content</a>
+						</li>
+					</ul>
+				</nav>
+			<section id="main">
+				<aside>
+			        <ul>
+			       	<div id="filter">
+			            <br>
+			            <p>Filter by:</p>
+			            <input type="text" data-ng-model="location" placeholder="Location"/> <br>
+			            <p></p>
+			            <input type="text" data-ng-model="name" placeholder="Company Name"/> </br>
+			            <p></p>
+			            <input type="text" data-ng-model="industry" placeholder="Industry"/> <br>
+			            <p></p>
+			            <input type="text" data-ng-model="keyworddescription" placeholder="Keyword"/> <br>
+			            <p></p>
+			            <select ng-model="intern" ng-options="status.paidvolunteer for status in statusList | orderBy:'applicationStatus'">
+			                <option value="">Paid or Volunteer</option>
+			            </select><br>
+			            <p></p>
+			            <select ng-model="intern" ng-options="interviewstatus.firstinterview for interviewstatus in firstInterviewList | orderBy:'applicationStatus'">
+			                <option value="">1st Interview</option>
+			            </select>
+			            <p></p>
+			        </ul>
+				</aside>
+			</section>
+				<!-- NAV GOES HERE -->
+			
+			</header>	
+		
+			<section id="main">
+				<ul>
+	            	<li id="profile_container" data-ng-repeat="item in list |filter:name| filter:paid | filter:intern| filter:industry| filter:location| filter:keyworddescription| filter: firstinterview">
+	                	<img src="http://www.corporatetraveller.ca/assets/images/profile-placeholder.gif" />
+	                    <div class="nametitle">{{item.name}}</div> <br>
+	                    {{item.industry}} <br>
+	                    Paid or Volunteer: {{item.paidvolunteer}}<br>
+	                    Location: {{item.location}}<br>
+	                    Description: {{item.keyworddescription}}<br>
+	                    First Interview required: {{item.firstinterview}}
+	            	</li>
+	        	</ul>
+			</section>
+		</div>
+		<script src="angular.min.js"></script>
+	</body>
+</html>
