@@ -48,7 +48,14 @@
 			        </ul>
 				</aside>
 
-
+			<section id="company_info">
+			<div ng-show="hovering" >
+				<img src="http://www.corporatetraveller.ca/assets/images/profile-placeholder.gif" /><br>
+				<p></p>
+				Description: {{hoveredCompany.keyworddescription}}<br>
+				<p></p>
+			</div>
+			</section>
 
 				<!-- NAV GOES HERE -->
 			
@@ -66,15 +73,7 @@
 	                </ul>
 			</section>
 
-			<section id="company_info">
-			<div ng-show="hovering" >
-				<img src="http://www.corporatetraveller.ca/assets/images/profile-placeholder.gif" /><br>
-				<p></p>
-				Description: {{hoveredCompany.keyworddescription}}<br>
-				<p></p>
-				Loacation: {{hoveredCompany.industry}}
-			</div>
-			</section>
+
 		</div>
 		<script src="angular.min.js"></script>
 	</body>

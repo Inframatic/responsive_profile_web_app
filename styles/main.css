@@ -19,6 +19,7 @@ aside {
 	margin-right:2px;
 	min-width: 400px;
 	margin-bottom: 10px;
+		border: solid gray 1px;
 	}
 
 #proflist{
@@ -37,6 +38,7 @@ div img{
 }
 
 #company_info {
+	min-height:500px;
 	width: 55%;
 	float: left;
 	border: solid black 1px;
@@ -159,7 +161,8 @@ header nav {
 	display: none;
 	}
 	#skipTo li {
-		background: #b1fffc;
+		margin: 0 auto;
+		background: #white;
 		}
 
 /* Banner */			
