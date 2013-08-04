@@ -1,7 +1,6 @@
 
 
-#main {
-	
+#main {	
 	width: 40%;
 	min-height:550px;
 	max-height:960px;
@@ -9,11 +8,12 @@
 	margin-left: 1%;
 	margin-right: 3%;
 	float: right;
+
 	}		
 aside { 
 	padding: 10px;
 	font-style: italic; font-size: 0.9em;
-	background: white;
+	background-color:#FFB65C;;
 	float: right;
 	width: 100%;
 	margin-right:2px;
@@ -25,7 +25,8 @@ aside {
 #proflist{
 	border-bottom-left-radius: 15px;
 	margin-bottom: 4px;
-	background-color:white;
+	background-color:#FFB65C;
+/*	background-color:#9ED0ED; lighter blue*/
 	min-width: 350px;
 }
 
@@ -34,23 +35,21 @@ aside {
 }
 
 div img{
-
+	position: center;
+	margin:0 auto;
 }
 
 #company_info {
+	padding:10px 3px 10px 3px;
 	min-height:500px;
 	width: 55%;
 	float: left;
 	border: solid black 1px;
-	background: white;
+	background-color:#FFB65C;
 	min-width: 350px;
 /*	background-color: gray;*/
-        border: 2px dashed #ccc;
-        top: 5px;
-        bottom: 5px;
-        left: 5px;
-        right: 5px;
-        box-shadow(0 0 0 1px #fff);
+        border: 1px solid gray;
+
 }
 
 #filter {
@@ -85,7 +84,7 @@ html {
 	}
 
 body { 
-	background: #57abdb; color: #666666; font-family: Arial, helvetica, sans-serif;
+	background: #57abdb; color: black; font-family: Tahoma, helvetica, sans-serif;
 	}
 
 ol, ul { 
@@ -94,7 +93,7 @@ ol, ul {
 
 ul li { 
 	margin: 0; padding: 2%;
-	border: solid black 1px;
+	border: solid gray 1px;
 	float:right;
 	margin-bottom: 2px;
 	}
