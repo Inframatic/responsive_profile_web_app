@@ -29,18 +29,17 @@
 			       	<section id="filter">
 			            <br>
 			            <p>Filter by:</p>
-			            <input type="text" data-ng-model="location" placeholder="Location"/> <br>
-			            <p></p>
-			            <input type="text" data-ng-model="name" placeholder="Company Name"/> </br>
-			            <p></p>
-			            <input type="text" data-ng-model="industry" placeholder="Industry"/> <br>
-			            <p></p>
-			            <input type="text" data-ng-model="keyworddescription" placeholder="Keyword"/> <br>
-			            <p></p>
+			            <input type="text" data-ng-model="location" placeholder="Location"/> 
+
+			            <input type="text" data-ng-model="name" placeholder="Company Name"/> 
+
+			            <input type="text" data-ng-model="industry" placeholder="Industry"/> 
+
+			            <input type="text" data-ng-model="keyworddescription" placeholder="Keyword"/> 
+
 			            <select ng-model="intern" ng-options="status.paidvolunteer for status in statusList | orderBy:'applicationStatus'">
 			                <option value="">Paid or Volunteer</option>
-			            </select><br>
-			            <p></p>
+			            </select>
 			            <select ng-model="intern" ng-options="interviewstatus.firstinterview for interviewstatus in firstInterviewList | orderBy:'applicationStatus'">
 			                <option value="">1st Interview</option>
 			            </select>
@@ -58,10 +57,10 @@
 			<section id="main">
 	            	<ul id="profile_container" data-ng-repeat="company in companies |filter:name| filter:paid | filter:intern| filter:industry| filter:location| filter:keyworddescription| filter: firstinterview">
 	                    <li ng-mouseover="showDetails(company)" id="proflist"><h1>{{company.name}}</h1><br>
-		                    {{company.industry}} <br>
 		                    Paid or Volunteer: {{company.paidvolunteer}}<br>
 		                    Location: {{company.location}}<br>
-		                    Description: {{company.keyworddescription}}<br>
+		                    <h2>{{company.industry}}</h2>
+<!-- 		                    Description: {{company.keyworddescription}}<br> -->
 		                </li>
 	                </ul>
 			</section>
@@ -69,7 +68,10 @@
 			<section id="company_info">
 			<div ng-show="hovering" >
 				<img src="http://www.corporatetraveller.ca/assets/images/profile-placeholder.gif" /><br>
+				<p></p>
 				Description: {{hoveredCompany.keyworddescription}}<br>
+				<p></p>
+				Loacation: {{hoveredCompany.industry}}
 			</div>
 			</section>
 		</div>

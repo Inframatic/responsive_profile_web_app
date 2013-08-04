@@ -1,6 +1,27 @@
+h2 {
+	float:right;
+}
+
+aside { 
+	padding: 20px;
+	font-style: italic; font-size: 0.9em;
+	background: white;
+	float: right;
+	width: 100%;
+	margin-right:2px;
+	min-width: 400px;
+	margin-bottom: 10px;
+	}
+
 #proflist{
 	border-bottom-left-radius: 15px;
 	margin-bottom: 4px;
+	background-color:white;
+	min-width: 350px;
+}
+
+#proflist:hover {
+	background-color: #82c5ed;
 }
 
 div img{
@@ -8,15 +29,16 @@ div img{
 }
 
 #company_info {
-	width: 38%;
+	width: 55%;
 	float: left;
 	border: solid black 1px;
+	background: white;
+	min-width: 350px;
 /*	background-color: gray;*/
 }
 
 #filter {
-	width:40%;
-	float:left;
+	width:100%;
 }
 
 #profile_container {
@@ -45,7 +67,7 @@ html {
 	}
 
 body { 
-	background:#ffffff; color: #666666; font-family: Arial, helvetica, sans-serif;
+	background: #57abdb; color: #666666; font-family: Arial, helvetica, sans-serif;
 	}
 
 ol, ul { 
@@ -75,14 +97,7 @@ img {
 	display: block; margin-bottom: 10px;
 	}
 
-aside { 
-	padding: 20px;
-	font-style: italic; font-size: 0.9em;
-	background-color:gray;
-	height:100%;
-	float: left;
-	margin-right:2px;
-	}
+
 
 
 article, aside, details, figcaption, figure,
