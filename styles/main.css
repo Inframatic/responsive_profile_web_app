@@ -1,6 +1,14 @@
+#proflist{
+	border-bottom-left-radius: 15px;
+	margin-bottom: 4px;
+}
+
+div img{
+
+}
+
 #company_info {
-	width: 30%;
-	margin-top:2%;
+	width: 38%;
 	float: left;
 	border: solid black 1px;
 /*	background-color: gray;*/
@@ -12,6 +20,7 @@
 }
 
 #profile_container {
+	border-left: 40px;
 	padding:3%;
 	margin-top: 20px;
 	margin-bottom: :20px;
@@ -47,6 +56,7 @@ ul li {
 	margin: 0; padding: 2%;
 	border: solid black 1px;
 	float:right;
+	margin-bottom: 2px;
 	}
 
 h1 { 
@@ -66,12 +76,12 @@ img {
 	}
 
 aside { 
-	margin-top:20px;
 	padding: 20px;
 	font-style: italic; font-size: 0.9em;
 	background-color:gray;
 	height:100%;
 	float: left;
+	margin-right:2px;
 	}
 
 
@@ -86,10 +96,16 @@ footer, header, hgroup, menu, nav, section {
 	max-width: 980px;
 	margin: auto;
 	padding: 2%;
+	height: 99%;
+	min-height:600px;
 	} 
 	#main {
 		width: 40%;
-		margin-left: 5%;
+		min-height:550px;
+		max-height:960px;
+		overflow:scroll;
+		margin-left: 1%;
+		margin-right: 3%;
 		float: right;
 		}		
 

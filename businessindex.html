@@ -57,7 +57,7 @@
 		
 			<section id="main">
 	            	<ul id="profile_container" data-ng-repeat="company in companies |filter:name| filter:paid | filter:intern| filter:industry| filter:location| filter:keyworddescription| filter: firstinterview">
-	                    <li ng-mouseover="showDetails(company)" class="nametitle">{{company.name}}<br>
+	                    <li ng-mouseover="showDetails(company)" id="proflist"><h1>{{company.name}}</h1><br>
 		                    {{company.industry}} <br>
 		                    Paid or Volunteer: {{company.paidvolunteer}}<br>
 		                    Location: {{company.location}}<br>
