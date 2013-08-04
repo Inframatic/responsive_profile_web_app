@@ -2,6 +2,7 @@
 	width: 30%;
 	margin-top:2%;
 	float: left;
+	border: solid black 1px;
 /*	background-color: gray;*/
 }
 
@@ -11,6 +12,7 @@
 }
 
 #profile_container {
+	padding:3%;
 	margin-top: 20px;
 	margin-bottom: :20px;
 
@@ -42,7 +44,7 @@ ol, ul {
 	}
 
 ul li { 
-	margin: 0; padding: 0;
+	margin: 0; padding: 2%;
 	border: solid black 1px;
 	float:right;
 	}

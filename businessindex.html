@@ -24,11 +24,6 @@
 						</li>
 					</ul>
 				</nav>
-
-				<section id="company_info">
-					<img src="http://www.corporatetraveller.ca/assets/images/profile-placeholder.gif" />
-				</section>
-				
 				<aside>
 			        <ul>
 			       	<section id="filter">
@@ -61,20 +56,22 @@
 			</header>	
 		
 			<section id="main">
-				<ul>
-	            	<li id="profile_container" data-ng-repeat="item in list |filter:name| filter:paid | filter:intern| filter:industry| filter:location| filter:keyworddescription| filter: firstinterview">
-	                	
-	                    <div class="nametitle">{{item.name}}</div> <br>
-	                    {{item.industry}} <br>
-	                    Paid or Volunteer: {{item.paidvolunteer}}<br>
-	                    Location: {{item.location}}<br>
-	                    Description: {{item.keyworddescription}}<br>
-	                    First Interview required: {{item.firstinterview}}
-	            	</li>
-	        	</ul>
+	            	<ul id="profile_container" data-ng-repeat="company in companies |filter:name| filter:paid | filter:intern| filter:industry| filter:location| filter:keyworddescription| filter: firstinterview">
+	                    <li ng-mouseover="showDetails(company)" class="nametitle">{{company.name}}<br>
+		                    {{company.industry}} <br>
+		                    Paid or Volunteer: {{company.paidvolunteer}}<br>
+		                    Location: {{company.location}}<br>
+		                    Description: {{company.keyworddescription}}<br>
+		                </li>
+	                </ul>
 			</section>
 
-
+			<section id="company_info">
+			<div ng-show="hovering" >
+				<img src="http://www.corporatetraveller.ca/assets/images/profile-placeholder.gif" /><br>
+				Description: {{hoveredCompany.keyworddescription}}<br>
+			</div>
+			</section>
 		</div>
 		<script src="angular.min.js"></script>
 	</body>
