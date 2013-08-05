@@ -9,7 +9,7 @@ function InternCtrl($scope) {
   ];
     $scope.internList = [ 
       {"paidvolunteer": 'Paid' },
-      {"paidvolunteer": 'Volunteer' } 
+      {"paidvolunteer": 'Volunteer' },
       {"paidvolunteer": 'Either'}];
 
     $scope.interns = [
