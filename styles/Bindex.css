@@ -13,19 +13,19 @@
 aside { 
 	padding: 10px;
 	font-style: italic; font-size: 0.9em;
-	background-color:#8AB6BA;
+	background-color:#DD7B61;
 	float: right;
 	width: 100%;
 	margin-right:2px;
 	min-width: 400px;
 	margin-bottom: 10px;
-
+	border-bottom:1px solid gray;
 	}
 
 #proflist{
 	border-bottom-left-radius: 15px;
 	margin-bottom: 4px;
-	background-color:#8AB6BA;
+	background-color:#DD7B61;
 /*	background-color:#9ED0ED; lighter blue*/
 	min-width: 350px;
 }
@@ -39,12 +39,12 @@ div img{
 	margin:0 auto;
 }
 
-#company_info {
+#intern_info {
 	padding:10px 3px 10px 3px;
 	min-height:500px;
 	width: 55%;
 	float: left;
-	background-color:#8AB6BA;
+	background-color:#DD7B61;
 	min-width: 350px;
 /*	background-color: gray;*/
         border: 1px solid gray;
